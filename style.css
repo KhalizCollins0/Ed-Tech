@@ -6,90 +6,91 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: lightcyan;
+    background-image: url('images/boy reading.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
-}
-
-/* ========== LOGIN PAGE ========== */
-.login-page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: lightcyan;
     padding: 20px;
+    min-height: 100vh;
 }
 
-.login-card {
-    background: white;
-    padding: 3rem 2.5rem;
-    border-radius: 24px;
-    box-shadow: 0 20px 50px black;
-    width: 100%;
-    max-width: 420px;
-    text-align: center;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: white;
+    box-shadow: 0 2px 10px black;
+    border-radius: 15px;
+
 }
 
-.login-logo {
-    font-size: 1.8rem;
+.logo {
+    font-size: 22px;
     font-weight: 700;
     color: teal;
-    margin-bottom: 1.5rem;
 }
 
-.login-card h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.login-subtitle {
-    color: lightslategray;
-    margin-bottom: 2rem;
-}
-
-.form-group {
-    text-align: left;
-    margin-bottom: 1.4rem;
-}
-
-.form-group label {
-    display: block;
-    font-size: 0.9rem;
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: lightseagreen;
     font-weight: 500;
-    margin-bottom: 0.4rem;
-    color: lightslategray;
 }
 
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 0.9rem 1.2rem;
-    border: 2px solid lightgrey;
-    border-radius: 12px;
-    font-size: 1rem;
-    outline: none;
+.nav-links a:hover,
+.nav-links a.active {
+    color: teal;
 }
 
-.form-group input:focus,
-.form-group select:focus {
-    border-color: teal;
+/* Dashboard */
+.dashboard {
+    padding: 40px;
 }
 
-.btn {
-    padding: 0.95rem 2rem;
-    border-radius: 50px;
-    border: none;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.btn.primary {
-    background: green;
-    color: white;
+.dashboard h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
 }
 
-.btn.full {
-    width: 100%;
-    margin-top: 0.5rem;
+.subtitle {
+    color: darkslategray;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px black;
+    width: 30%;
+    min-width: 250px;
+}
+
+.card h3 {
+    font-size: 15px;
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+.big-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: teal;
+    margin-bottom: 5px;
 }
